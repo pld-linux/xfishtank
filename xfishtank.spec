@@ -20,13 +20,13 @@ screen. Xfishtank works with the X Window System.
 
 %build
 xmkmf
-make CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
+%{__make} CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
 	CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 strip --strip-unneeded $RPM_BUILD_ROOT%{_bindir}/*
 
