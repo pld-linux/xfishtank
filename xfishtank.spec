@@ -5,8 +5,8 @@ Version:	2.1tp
 Release:	3
 License:	MIT
 Group:		X11/Amusements
-Source0:	http://metalab.unc.edu/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
-# Source0-md5:	73829d191057e1dc3380635ffa4bf721
+Source0:	http://www.ibiblio.org/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
+# Source0-md5:	a8e1efd1f2cd96aafde4fc105a4ed4c2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
