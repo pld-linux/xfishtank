@@ -5,7 +5,7 @@ Release:	2
 Copyright:	MIT
 Group:		Amusements/Graphics
 Source:		http://metalab.unc.edu/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		/usr/X11R6/man
