@@ -1,10 +1,11 @@
-Summary:	An X Window System graphic display of an animated aquarium.
+Summary:	An X Window System graphic display of an animated aquarium
 Name:		xfishtank
 Version:	2.1tp
 Release:	2
 Copyright:	MIT
-Group:		Amusements/Graphics
-Source:		http://metalab.unc.edu/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
+Group:		X11/Amusements
+Group(pl):	X11/Rozrywka
+Source0:	http://metalab.unc.edu/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -12,7 +13,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The xfishtank program displays an animated aquarium background on your
-screen.  Xfishtank works with the X Window System.
+screen. Xfishtank works with the X Window System.
 
 %prep
 %setup -q
