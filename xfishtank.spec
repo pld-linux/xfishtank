@@ -5,8 +5,6 @@ Version:	2.1tp
 Release:	3
 License:	MIT
 Group:		X11/Amusements
-Group(de):	X11/Unterhaltung
-Group(pl):	X11/Rozrywka
 Source0:	http://metalab.unc.edu/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
