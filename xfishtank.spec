@@ -1,9 +1,11 @@
 Summary:	An X Window System graphic display of an animated aquarium
+Summary(pl):	Program pod X wy¶wietlaj±cy animowane akwarium
 Name:		xfishtank
 Version:	2.1tp
 Release:	2
-Copyright:	MIT
+License:	MIT
 Group:		X11/Amusements
+Group(de):	X11/Unterhaltung
 Group(pl):	X11/Rozrywka
 Source0:	http://metalab.unc.edu/pub/Linux/X11/demos/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,15 +22,13 @@ screen. Xfishtank works with the X Window System.
 
 %build
 xmkmf
-%{__make} CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
-	CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
+	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_bindir}/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
