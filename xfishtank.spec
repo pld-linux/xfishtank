@@ -1,5 +1,5 @@
 Summary:	An X Window System graphic display of an animated aquarium
-Summary(pl):	Program pod X wy∂wietlaj±cy animowane akwarium
+Summary(pl.UTF-8):   Program pod X wy≈õwietlajƒÖcy animowane akwarium
 Name:		xfishtank
 Version:	2.1tp
 Release:	3
@@ -16,9 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The xfishtank program displays an animated aquarium background on your
 screen. Xfishtank works with the X Window System.
 
-%description -l pl
-Program xfishtank wy∂wietla na ekranie t≥o z animowanym akwarium.
-Dzia≥a z X Window System.
+%description -l pl.UTF-8
+Program xfishtank wy≈õwietla na ekranie t≈Ço z animowanym akwarium.
+Dzia≈Ça z X Window System.
 
 %prep
 %setup -q
