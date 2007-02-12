@@ -1,5 +1,5 @@
 Summary:	An X Window System graphic display of an animated aquarium
-Summary(pl.UTF-8):   Program pod X wyświetlający animowane akwarium
+Summary(pl.UTF-8):	Program pod X wyświetlający animowane akwarium
 Name:		xfishtank
 Version:	2.1tp
 Release:	3
